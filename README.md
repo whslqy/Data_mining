@@ -24,7 +24,7 @@ To run this notebook successfully, ensure the following are installed and config
 - **System Requirements**: 
   - No GPU acceleration required (`isGpuEnabled`: false).
   - Minimum 4GB RAM recommended for handling the dataset.
-  - Approximately 500MB of free disk space for the notebook, dataset, and output files.
+  - Approximately 50MB of free disk space for the notebook, dataset, and output files.
 
 ## Installation
 Follow these steps to set up the environment and run the notebook:
@@ -46,18 +46,15 @@ Follow these steps to set up the environment and run the notebook:
      pip install pandas numpy scikit-learn matplotlib
      ```
 
-3. **Download the Dataset**:
-   - Visit the Kaggle dataset page (https://www.kaggle.com/datasets/rajatkumar30/fake-news) and download.
-   - Extract the dataset and place it in a `data` directory within the project folder, or update the notebook's file path to the same path with fakenews-passive-aggressive.ipynb .
 
-4. **Launch Jupyter Notebook**:
+3. **Launch Jupyter Notebook**:
    - Start the Jupyter Notebook server:
      ```
      jupyter notebook
      ```
    - Open `fakenews-passive-aggressive.ipynb` in your browser.
 
-5. **Verify Setup**:
+4. **Verify Setup**:
    - Run the first cell to check for missing dependencies or dataset issues. The notebook will fail gracefully if prerequisites are not met, providing error messages for troubleshooting.
 
 ## Usage
@@ -93,14 +90,6 @@ The notebook is divided into executable cells. Follow these steps to use it:
 - **Performance Issues**: If the notebook runs slowly, reduce the dataset size or increase `max_iter` cautiously.
 - **Visualization Errors**: Confirm `matplotlib` is installed and the `fake-news.png` file is correctly referenced.
 
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit them (`git commit -m "Add your message"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Submit a pull request with a description of your changes.
-6. Ensure all modifications are documented in the notebook with comments.
 
 ## Additional Resources
 - [Scikit-learn Documentation](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PassiveAggressiveClassifier.html) for Passive-Aggressive classifier details.
